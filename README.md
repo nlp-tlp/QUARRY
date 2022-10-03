@@ -13,6 +13,8 @@ This repo uses Poetry, so you'll need Python 3.7 and the poetry package. Then si
     poetry shell
     python run_quarry.py
 
+Note: to reproduce the queries in the case study section of the paper, change `Entity` to `Q_Entity`, `Rule` to `Q_Rule`, and `Transaction` to `Q_Document` (they were simplified in the paper for brevity).
+
 ## Neo4j database
 
 This source code is designed to operate over an existing knowledge graph produced by MWO2KG (code is available [here](https://github.com/nlp-tlp/mwo2kg-and-echidna)). It will work on any Neo4j graph with the same schema, i.e. `Document` nodes and `Instance` nodes connected to those documents.
